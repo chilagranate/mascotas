@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginBottom="@dimen/cv_martin_bottom"
+    card_view:cardCornerRadius="@dimens/radius_cardview"
+    android:elevation="8dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgFotoMascota"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/CV_img_size"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/gato" />
+
+        <RelativeLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dog_bone"
+                android:paddingLeft="@dimen/CV_padding"
+                android:paddingBottom="@dimen/CV_padding"
+                android:paddingTop="@dimen/CV_padding"
+                />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robert"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/cv_name_size"
+                android:paddingLeft="@dimen/CV_padding_left"
+                android:layout_toRightOf="@id/imgCV"
+
+                />
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_toLeftOf="@id/imgCVRate"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/CV_padding_rigth"
+                android:textSize="@dimen/cv_name_size"/>
+
+            <ImageView
+                android:id="@+id/imgCVRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/dog_bone_color"
+                android:paddingLeft="@dimen/CV_padding"
+                android:paddingBottom="@dimen/CV_padding"
+                android:paddingTop="@dimen/CV_padding"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
