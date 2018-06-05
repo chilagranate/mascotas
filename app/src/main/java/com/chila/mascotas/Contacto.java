@@ -1,7 +1,8 @@
-package com.chila.mascotas.pojo;
+package com.chila.mascotas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,13 +19,16 @@ public class Contacto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacto);
 
+        Toolbar actionBar = findViewById(R.id.MiActionBar);
+        setSupportActionBar(actionBar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.pata);
+        getSupportActionBar().setTitle(R.string.Favs_tittle);
+
         TextView contNombre = findViewById(R.id.contacto_nombre);
         TextView contMail = findViewById(R.id.contacto_mail);
         TextView contMensaje = findViewById(R.id.contacto_mensaje);
         Button contBoton = findViewById(R.id.contacto_boton);
-
-
-
         contBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

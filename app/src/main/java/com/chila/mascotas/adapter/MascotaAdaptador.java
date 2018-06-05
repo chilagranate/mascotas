@@ -23,6 +23,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     ArrayList<Mascota> mascotas;
     @NonNull
     @Override
+
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascota, parent, false);
         return new MascotaViewHolder(v);

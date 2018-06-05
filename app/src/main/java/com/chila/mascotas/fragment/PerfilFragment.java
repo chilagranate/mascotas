@@ -10,21 +10,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chila.mascotas.adapter.FotoAdaptador;
 import com.chila.mascotas.pojo.Mascota;
 import com.chila.mascotas.R;
 import com.chila.mascotas.adapter.MascotaAdaptador;
 
 import java.util.ArrayList;
 
-
 public class PerfilFragment extends android.support.v4.app.Fragment{
     private RecyclerView listaFotos;
-    ArrayList<Mascota> mascotas;
+    ArrayList<Mascota> fotos;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //return super.onCreateView(inflater, container, savedInstanceState);
         View v = inflater.inflate(R.layout.fragment_perfil,container,false);
+
+
         listaFotos = v.findViewById(R.id.rvFotosSubidas);
         GridLayoutManager llm = new GridLayoutManager(getActivity(),3);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
@@ -34,23 +36,24 @@ public class PerfilFragment extends android.support.v4.app.Fragment{
 
         inicializarListaMascotas();
         inicializarAdaptador();
+
         return v;
     }
 
     public void inicializarAdaptador() {
 
-        MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
+        FotoAdaptador adaptador = new FotoAdaptador(fotos);
         listaFotos.setAdapter(adaptador);
     }
 
     public void inicializarListaMascotas() {
-        mascotas = new ArrayList<Mascota>();
+        fotos = new ArrayList<Mascota>();
 
-        mascotas.add(new Mascota(R.drawable.perrito, "Bobby", 5));
-        mascotas.add(new Mascota(R.drawable.tortuga, "Manuelita", 7));
-        mascotas.add(new Mascota(R.drawable.pajaro, "Birdy", 5));
-        mascotas.add(new Mascota(R.drawable.red_nemo, "Nemo", 2));
-        mascotas.add(new Mascota(R.drawable.gato, "Firulais", 3));
+        fotos.add(new Mascota(R.drawable.perrito, "Bobby", 5));
+        fotos.add(new Mascota(R.drawable.tortuga, "Manuelita", 7));
+        fotos.add(new Mascota(R.drawable.pajaro, "Birdy", 5));
+        fotos.add(new Mascota(R.drawable.red_nemo, "Nemo", 2));
+        fotos.add(new Mascota(R.drawable.gato, "Firulais", 3));
 
 
     }

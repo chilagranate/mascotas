@@ -11,6 +11,7 @@
     <dimen name="RV_padding_right">20dp</dimen>
     <dimen name="CV_padding">5dp</dimen>
     <dimen name="CV_img_size">292dp</dimen>
+    <dimen name="profile_img_size">30sp</dimen>
 
 
 </resources>
