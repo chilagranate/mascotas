@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:icon="@drawable/pata">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +20,13 @@
         </activity>
         <activity
             android:name=".FavsActivity"
-            android:parentActivityName=".MainActivity"
-            android:icon="@drawable/pata">
+            android:icon="@drawable/pata"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                >
-
-            </meta-data>
+                android:value=".MainActivity"></meta-data>
         </activity>
+        <activity android:name=".Contacto"></activity>
     </application>
 
 </manifest>

@@ -38,11 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void favact(View v) {
 
-    }
 
     public void inicializarAdaptador() {
+
         MascotaAdaptador adaptador = new MascotaAdaptador(mascotas);
         listaMascotas.setAdapter(adaptador);
     }
@@ -70,9 +69,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.mSalir:
+
+            case R.id.mContacto:
+                Intent intent1 = new Intent(this, Contacto.class);
+                startActivity(intent1);
+
                 finish();
                 break;
+
+            case R.id.mAcercaDe:
+
+                break;
+
             case R.id.mFav:
                 Intent intent = new Intent(this, FavsActivity.class);
                 startActivity(intent);

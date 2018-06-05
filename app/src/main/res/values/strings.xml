@@ -2,5 +2,11 @@
     <string name="app_name">Petagram</string>
 
     <string name="menu_exit">Salir</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
     <string name="Favs_tittle">Mascotas Favoritas</string>
+    <string name="contacto_nombre">Nombre</string>
+    <string name="contacto_mail">E-Mail</string>
+    <string name="contacto_mensaje">Ingrese su mensaje</string>
+    <string name="contacto_enviar">Enviar comentario</string>
 </resources>

@@ -15,5 +15,12 @@
         <!--<item name="android:popupBackground">#FFF</item>-->
     </style>
 
+    <style name="RaisedButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorBlanco</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+
+
+    </style>
 
 </resources>
