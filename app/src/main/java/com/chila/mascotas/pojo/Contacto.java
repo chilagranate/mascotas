@@ -1,4 +1,4 @@
-package com.chila.mascotas;
+package com.chila.mascotas.pojo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-
+import com.chila.mascotas.EnviarMail;
+import com.chila.mascotas.R;
 
 
 public class Contacto extends AppCompatActivity {

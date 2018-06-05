@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.chila.mascotas.pojo.Config;
+
 import java.util.Properties;
 
 import javax.mail.Message;

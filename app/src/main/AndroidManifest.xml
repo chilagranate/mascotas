@@ -26,7 +26,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"></meta-data>
         </activity>
-        <activity android:name=".Contacto"></activity>
+        <activity android:name=".pojo.Contacto"></activity>
     </application>
 
 </manifest>

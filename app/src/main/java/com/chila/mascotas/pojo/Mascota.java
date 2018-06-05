@@ -1,4 +1,4 @@
-package com.chila.mascotas;
+package com.chila.mascotas.pojo;
 
 public class Mascota {
 

@@ -1,7 +1,6 @@
-package com.chila.mascotas;
+package com.chila.mascotas.adapter;
 
 
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.chila.mascotas.pojo.Mascota;
+import com.chila.mascotas.R;
 
 import java.util.ArrayList;
 
