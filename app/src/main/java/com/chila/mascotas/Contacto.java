@@ -27,6 +27,7 @@ public class Contacto extends AppCompatActivity {
         contBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sendEmail();
 
             }
         });
@@ -35,6 +36,10 @@ public class Contacto extends AppCompatActivity {
     }
 
     private void sendEmail() {
+
+
+
+
         //Getting content for email
         String email = "chila_granate@hotmail.com";
         String subject = "Mail contacto";
@@ -45,5 +50,6 @@ public class Contacto extends AppCompatActivity {
 
         //Executing sendmail to send email
         sm.execute();
+
     }
 }

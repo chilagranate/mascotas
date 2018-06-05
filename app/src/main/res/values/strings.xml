@@ -9,4 +9,7 @@
     <string name="contacto_mail">E-Mail</string>
     <string name="contacto_mensaje">Ingrese su mensaje</string>
     <string name="contacto_enviar">Enviar comentario</string>
+    <string name="contacto_toast_enviado">Mensaje enviado</string>
+    <string name="contacto_enviando">Enviando mensaje</string>
+    <string name="contacto_espere">Espere por favor...</string>
 </resources>
