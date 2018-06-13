@@ -1,7 +1,6 @@
-package com.chila.mascotas;
+package com.chila.mascotas.adapter;
 
 
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.chila.mascotas.pojo.Mascota;
+import com.chila.mascotas.R;
 
 import java.util.ArrayList;
 
@@ -21,6 +23,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     ArrayList<Mascota> mascotas;
     @NonNull
     @Override
+
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascota, parent, false);
         return new MascotaViewHolder(v);

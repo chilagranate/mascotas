@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/gato"
+            app:civ_border_color="#EEEEEE"
+            android:layout_gravity="center"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/colorAccent"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Gato Tom"
+            android:layout_gravity="center"
+            android:textSize="@dimen/profile_img_size"
+            android:textStyle="bold"/>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFotosSubidas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:paddingLeft="@dimen/RV_padding_left"
+            android:paddingRight="@dimen/RV_padding_right"
+
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

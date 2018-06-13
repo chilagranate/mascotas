@@ -5,8 +5,15 @@
     <string name="menu_contacto">Contacto</string>
     <string name="menu_acercade">Acerca de</string>
     <string name="Favs_tittle">Mascotas Favoritas</string>
+    <string name="contact_tittle">Contacto</string>
     <string name="contacto_nombre">Nombre</string>
     <string name="contacto_mail">E-Mail</string>
     <string name="contacto_mensaje">Ingrese su mensaje</string>
     <string name="contacto_enviar">Enviar comentario</string>
+    <string name="contacto_toast_enviado">Mensaje enviado</string>
+    <string name="contacto_enviando">Enviando mensaje</string>
+    <string name="contacto_espere">Espere por favor...</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="acerca_de_text">Esta es una aplicacion desarrollada para el curso de desarrollo de aplicaciones de android de coursera</string>
+    <string name="acerca_de_titulo">Acerca de</string>
 </resources>

@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.chila.mascotas.pojo.Config;
+
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -47,7 +49,7 @@ public class EnviarMail extends AsyncTask<Void,Void,Void> {
     protected void onPreExecute() {
         super.onPreExecute();
         //Showing progress dialog while sending email
-        progressDialog = ProgressDialog.show(context,"Sending message","Please wait...",false,false);
+        progressDialog = ProgressDialog.show(context,"Enviando mensaje","Por favor esperar...",false,false);
     }
 
     @Override
@@ -56,7 +58,7 @@ public class EnviarMail extends AsyncTask<Void,Void,Void> {
         //Dismissing the progress dialog
         progressDialog.dismiss();
         //Showing a success message
-        Toast.makeText(context,"Message Sent",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,R.string.contacto_toast_enviado,Toast.LENGTH_LONG).show();
     }
 
     @Override
