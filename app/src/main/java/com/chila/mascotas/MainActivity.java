@@ -58,8 +58,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.mAcercaDe:
-
+                Intent intent2 = new Intent(this, AcercaActivity.class);
+                startActivity(intent2);
                 break;
+
+
 
             case R.id.mFav:
                 Intent intent = new Intent(this, FavsActivity.class);
